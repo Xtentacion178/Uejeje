@@ -7341,7 +7341,7 @@ function Library:CreateWindow(WindowInfo)
 
                 setmetatable(Tab, BaseGroupbox)
 
-                Tabbox.Tabs[Name] = Tab
+                Tabbox.Tabs[Icon] = Tab
 
                 return Tab
             end
@@ -7442,7 +7442,7 @@ function Library:CreateWindow(WindowInfo)
         end)
         TabButton.MouseButton1Click:Connect(Tab.Show)
 
-        Library.Tabs[Name] = Tab
+        Library.Tabs[Icon] = Tab
 
         return Tab
     end
