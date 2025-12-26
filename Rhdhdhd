@@ -6743,13 +6743,11 @@ function Library:CreateWindow(WindowInfo)
 
         if select("#", ...) == 1 and typeof(...) == "table" then
             local Info = select(1, ...)
-            Name = Info.Name or "Tab"
             Icon = Info.Icon
             Description = Info.Description
         else
-            Name = select(1, ...)
-            Icon = select(2, ...)
-            Description = select(3, ...)
+            Icon = select(1, ...)
+            Description = select(2, ...)
         end
 
         local TabButton: TextButton
